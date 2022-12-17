@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_official"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".OfficialActivity">
+
+    <TextView
+        android:id="@+id/website_official"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="browse"
+        android:padding="2dp"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/website_official_head"
+        app:layout_constraintTop_toBottomOf="@+id/website_official_head" />
+
+    <TextView
+        android:id="@+id/website_official_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:text="Website:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/email_official_head"
+        app:layout_constraintStart_toStartOf="@+id/email_official_head"
+        app:layout_constraintTop_toBottomOf="@+id/email_official" />
+
+    <TextView
+        android:id="@+id/email_official"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="sendEmail"
+        android:padding="2dp"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/email_official_head"
+        app:layout_constraintTop_toBottomOf="@+id/email_official_head" />
+
+    <TextView
+        android:id="@+id/email_official_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:text="Email:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/phone_official_head"
+        app:layout_constraintStart_toStartOf="@+id/phone_official_head"
+        app:layout_constraintTop_toBottomOf="@+id/phone_official" />
+
+    <TextView
+        android:id="@+id/phone_official"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="dial"
+        android:padding="2dp"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/phone_official_head"
+        app:layout_constraintTop_toBottomOf="@+id/phone_official_head" />
+
+    <TextView
+        android:id="@+id/phone_official_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:text="Phone:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/address_official_head"
+        app:layout_constraintStart_toStartOf="@+id/address_official_head"
+        app:layout_constraintTop_toBottomOf="@+id/address_official" />
+
+    <TextView
+        android:id="@+id/location_official"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:padding="10dp"
+        android:text="Location here!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_official"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:padding="2dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/picture_official"
+        app:layout_constraintTop_toBottomOf="@+id/location_official" />
+
+    <TextView
+        android:id="@+id/title_official"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/name_official"
+        app:layout_constraintStart_toStartOf="@+id/name_official"
+        app:layout_constraintTop_toBottomOf="@+id/name_official" />
+
+    <TextView
+        android:id="@+id/party_official"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:text="Party"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_official"
+        app:layout_constraintStart_toStartOf="@+id/title_official"
+        app:layout_constraintTop_toBottomOf="@+id/title_official" />
+
+    <ImageView
+        android:id="@+id/picture_official"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="clickPicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_official"
+        app:srcCompat="@drawable/missing" />
+
+    <ImageView
+        android:id="@+id/facebook_official"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goFacebook"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/party_official"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/twitter_official"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goTwitter"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/facebook_official"
+        app:layout_constraintTop_toBottomOf="@+id/party_official"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/youtube_official"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goYoutube"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/twitter_official"
+        app:layout_constraintTop_toBottomOf="@+id/party_official"
+        app:srcCompat="@drawable/youtube" />
+
+    <TextView
+        android:id="@+id/address_official_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:text="Address:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook_official" />
+
+    <TextView
+        android:id="@+id/address_official"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="clickAddress"
+        android:padding="2dp"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/address_official_head"
+        app:layout_constraintTop_toBottomOf="@+id/address_official_head" />
+
+    <ImageView
+        android:id="@+id/partylogo_official"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="clickLogo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/picture_official"
+        app:layout_constraintEnd_toEndOf="@+id/picture_official"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/picture_official"
+        app:srcCompat="@drawable/dem_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CivilAdvocacy</string>
+    <string name="about_subtitle"><u>Google Civic Information API</u></string>
+    <string name="no_network"><b>No Network Connection</b>\nData cannot be accessed/loaded\nwithout an Internet connection.</string>
+</resources>
